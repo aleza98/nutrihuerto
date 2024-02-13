@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ventas</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  
+  <style>
+    body {
+      background: rgba(24, 243, 152, 0.3);
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  	<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="img/logo.png" width="30" height="30" alt="Logo">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="paneldecontrol.html">Inicio <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Cerrar Sesión</a>
+      </li>    
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+
+  <h1 class="text-center mb-4">Ventas y Facturacion</h1>
+
+  <form>
+    <div class="form-group">
+      <label>Categoría:</label>
+      <select id="category" class="form-control">
+        <option>Frutas</option>
+        <option>Verduras</option>
+        <option>Otros</option>  
+      </select>
+    </div>
+
+    
+
+    <div id="selected-product" class="mt-4">
+      <h4>Producto Seleccionado</h4>
+      <p>Código: P001</p>
+      <p>Libra: 1</p>
+      <p>Descripción: Papa</p>
+      <p>Precio: $800</p>
+    </div>
+
+    <div class="form-group mt-3">
+      <label>Cantidad:</label>
+      <input type="number" id="quantity" value="1" class="form-control" />
+    </div>
+
+    <button class="btn btn-primary btn-block">Agregar al Carrito</button>
+
+  </form>
+  
+  <hr>
+  
+  <h2 class="text-center">Carrito</h2>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Código</th>
+        <th>Libra</th>
+        <th>Descripción</th>
+        <th>Precio</th>
+        <th>Cantidad</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>P001</td>
+        <td>1</td>
+        <td>Papa</td> 
+        <td>$800</td>
+        <td>1</td>
+        <td>$800</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4" class="text-right">Total:</td>
+        <td>$800</td>
+      </tr>
+    </tfoot>
+  </table>
+  
+  <button class="btn btn-success btn-block">Generar Ticket</button>
+  
+</div>
+<!-- Footer -->  
+<footer class="footer mt-auto py-3 bg-light fixed-bottom">
+  <div class="container">
+    <span class="text-muted">
+      <button class="btn btn-outline-primary btn-sm">
+        ¿Necesita ayuda?
+      </button>
+    </span>
+  </div>
+</footer>
+</body>
+</html>

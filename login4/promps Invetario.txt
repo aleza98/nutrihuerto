@@ -1,0 +1,15 @@
+Actúa como programador y desarrollador web profesional y me genera un digo html donde me muestre los productos registrados de una base de datos mysql que se pueda agregar, eliminar y editar con los siguientes campos:
+
+Código: un número entero
+Categoría: una cadena de caracteres
+Nombre Producto: una cadena de caracteres
+Precio Compra: un número decimal
+Precio Venta: un numero decimal
+Existencia: un número entero
+La tabla de productos debe ser de tipo datatable y debe tener las siguientes características:
+
+Filtrado por todos los campos
+Ordenación por todos los campos
+Búsqueda por todos los campos
+Estilo boostrap moderno con el color #24d683
+El código generado debe ser probado para garantizar que funcione correctamente.

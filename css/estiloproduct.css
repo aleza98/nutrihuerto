@@ -1,0 +1,20 @@
+
+  #Cabeza,#cuerpo{
+    margin:0px 15% 0px 15%;
+  }
+ 
+  #cuerpo{
+    margin-top:20px;
+    border-style:solid;
+  }
+  .Pregunta{
+    margin:20px;
+  }
+  .CajaTexto{
+    border-radius:5px;
+    width:95%;
+  }
+  
+  .boton{
+    width:100%;
+  }

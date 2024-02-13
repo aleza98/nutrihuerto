@@ -1,0 +1,21 @@
+Necesito un codigo hmtl Control de ventas para hacer reportes
+
+Que tenga Buscar por fecha por dias, mes año de los prodcutos vendido
+registrados de una base de datos mysql
+
+arriba en Nav, Logo al a la derecha y Cerrar Sesion a la izquierda
+
+un boton inferior derecho Necesita Ayuda?
+
+que tenga boton para Imprimir, guardar en PDF
+
+Donde me muestre lo siguiente:
+Codigo del Prodcuto
+Descripcion o Nombre del Producto 
+Cantidad
+Precio
+Valor de ventas
+Cantidad Existencia
+
+Todo esto con estilo boostrap moderno y colores #24d683
+

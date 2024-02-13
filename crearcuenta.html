@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de cuenta</title>
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+  <div class="login">
+    <div class="container-login100">
+      <div class="wrap-login100">
+        <form class="login100-form">
+          <div class="login-logo">
+            <img src="img/logowhiteblack.png" alt="login-logo">
+          </div>
+
+          <span class="login100-form-title">
+            Registrarse
+          </span>
+          <span class="login100-form-title">
+            <i class="zmdi zmdi-account"></i>
+          </span>
+
+          <div class="wrap-input100">
+            <input class="input100" type="text" name="username" placeholder="Escriba su usuario" />
+          </div>
+
+          <div class="wrap-input100">
+            <input class="input100" type="password" name="pass" id="password" placeholder="Escriba su clave" />
+          </div>
+
+          <div class="wrap-input100">
+            <input class="input100" type="password" name="confirmPass" id="confirmPassword" placeholder="Confirme su clave" />
+          </div>
+
+          <div class="wrap-login100-form-btn">
+            <button class="login__form-btn" onclick="registrarse()">
+              Registrarse
+            </button>
+            <script>
+              function registrarse() {
+                var username = document.querySelector('input[name="username"]').value;
+                var password = document.querySelector('#password').value;
+                var confirmPassword = document.querySelector('#confirmPassword').value;
+
+                if (password !== confirmPassword) {
+                  alert('Las claves no coinciden. Por favor, vuelva a ingresarlas.');
+                  return;
+                }
+
+                // Aquí debes agregar el código para procesar el registro del usuario.
+                // Puedes enviar los datos a un servidor o almacenarlos en una base de datos.
+                // Por ejemplo, puedes utilizar JavaScript para hacer una solicitud HTTP (AJAX) al servidor.
+
+                console.log('Registrando usuario: ' + username);
+              }
+            </script>
+          </div>
+
+          <div class="text-center">
+            <span class="txt1">
+              ¿Ya tienes una cuenta?
+            </span>
+            <a class="txt2" href="index.html">
+              Iniciar sesión
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+    function registrarse() {
+      var username = document.querySelector('input[name="username"]').value;
+      var password = document.querySelector('#password').value;
+      var confirmPassword = document.querySelector('#confirmPassword').value;
+  
+      if (password !== confirmPassword) {
+        alert('Las claves no coinciden. Por favor, vuelva a ingresarlas.');
+        return;
+      }
+  
+      // Aquí debes agregar el código para procesar el registro del usuario.
+      // Puedes enviar los datos a un servidor o almacenarlos en una base de datos.
+      // Por ejemplo, puedes utilizar JavaScript para hacer una solicitud HTTP (AJAX) al servidor.
+  
+      console.log('Registrando usuario: ' + username);
+    }
+  </script>
+</body>
+</html>
